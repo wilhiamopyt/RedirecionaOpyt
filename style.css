@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#body {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    height: 70vh;
+    margin: 50px;
+}
+
+hr {
+    border-width: 1px;
+    border-color: black;
+}
+
+#logo img {
+    padding: 4px;
+}
+
+#body h3 span {
+    color: red;
+}
+
+.aplicativo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aplicativo img {
+    margin-left: 10px;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#texto h1 {
+    font-size: 58px;
+}
+
+#texto h1 span:nth-child(1) {
+    animation: ponto 1.5s infinite;
+    animation-delay: 0s;
+}
+
+#texto h1 span:nth-child(2) {
+    animation: ponto 2s infinite;
+    animation-delay: 1s;
+}
+
+#texto h1 span:nth-child(3) {
+    animation: ponto 3s infinite;
+    animation-delay: 2s;
+}
+@keyframes ponto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    #body {
+        flex-direction: column;
+    }
+    #texto {
+        margin-top: -50px;
+    }
+
+    
+}
